@@ -1,0 +1,8 @@
+# Example: 1 Container + 1 Port + 2 Mounts
+container: "alpine:latest"
+port: 8080
+mounts:
+  - source: "/etc/hosts"
+    target: "/mnt/hosts"
+  - source: "/tmp/local-config"
+    target: "/config"
